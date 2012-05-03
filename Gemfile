@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
 gem "mongoid", ">= 0"
-gem "sunspot", ">= 1.1.0"
-gem "sunspot_rails", ">= 1.1.0"
+gem "sunspot", "~>2.0.0.pre"
+gem "sunspot_rails", "~>2.0.0.pre"
 
 group :development, :test do
   gem "shoulda", ">= 0"
