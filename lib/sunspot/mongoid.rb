@@ -78,6 +78,7 @@ module Sunspot
 
       def criteria(ids)
         c = @clazz.criteria
+        # Mongoid 3 support
         c.respond_to?(:for_ids) ? c.for_ids(ids) : c.id(ids)
       end
     end

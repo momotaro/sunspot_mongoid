@@ -1,7 +1,7 @@
 sunspot_mongoid
 ====
 
-A Sunspot wrapper for Mongoid.
+A Sunspot wrapper for Mongoid. Currently supports versions: 2.x, 3.0.x and 3.1.x
 
 Install
 ----
@@ -54,8 +54,9 @@ Reindex all solr models that are located in your application's models directory.
 Links
 ----
 
-* [sunspot](http://github.com/outoftime/sunspot)
-* [sunspot_rails](http://github.com/outoftime/sunspot/tree/master/sunspot_rails/)
+* [sunspot](https://github.com/sunspot/sunspot)
+
+Includes the 'sunspot_rails' gem
 
 Copyright
 ----

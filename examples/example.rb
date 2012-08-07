@@ -1,8 +1,14 @@
 $:.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 require 'sunspot_mongoid'
 
+test_db = 'sunspot-mongoid-test'
+
 Mongoid.configure do |config|
-  config.master = Mongo::Connection.new.db('sunspot-mongoid-test')
+  if defined?(Moped)
+    config.connect_to(test_db)
+  else
+    config.master = Mongo::Connection.new.db(test_db)
+  end
 end
 
 # model
